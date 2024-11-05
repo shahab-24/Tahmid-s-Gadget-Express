@@ -1,7 +1,10 @@
+import { Outlet, useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
-import Navbar from "./Navbar";
+import AllCategoriesCard from "./AllCategoriesCard";
 
 const Home = () => {
+        const categories = useLoaderData();
+        
         return (
                 <div className="container mx-auto">
                         
@@ -17,6 +20,13 @@ const Home = () => {
                         </div>
                         <div className="">
                         <Banner></Banner>
+                        
+                        
+                        
+                        </div>
+                        <div className="mt-[550px] absolute container mx-auto ">
+                        
+                        <AllCategoriesCard categories={categories.categories}></AllCategoriesCard>
                         </div>
                 </div>
         );

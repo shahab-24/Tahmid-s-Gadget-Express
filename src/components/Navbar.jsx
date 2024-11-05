@@ -31,7 +31,7 @@ const Navbar = () => {
       </ul>
     </div>
     
-    <a className="btn btn-ghost text-xl text-white">Ts Gadget Express</a>
+    <a className="btn btn-ghost text-xl text-white font-extrabold"><span className="text-sky-400 text-4xl">Ts </span>  Gadget   <span className="text-sky-400 text-3xl">x</span>press</a>
   </div>
   <div className="navbar-center hidden lg:flex ">
     <ul className="menu menu-horizontal px-1 flex gap-4">

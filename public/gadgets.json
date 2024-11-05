@@ -1,0 +1,123 @@
+[
+        {
+          "product_id": "101",
+          "product_title": "Dell XPS 13",
+          "product_image": "https://i.ibb.co.com/6n76Z0P/dell-xps-13.jpg",
+          "category": "Computers",
+          "price": 999,
+          "description": "A high-performance laptop with a sleek design.",
+          "specification": ["13.3 inch display", "16GB RAM", "512GB SSD", "Intel Core i7"],
+          "availability": true,
+          "rating": 4.8,
+          "other": "Lightweight and portable"
+        },
+        {
+          "product_id": "102",
+          "product_title": "MacBook Air M1",
+          "product_image": "https://i.ibb.co.com/Wft7zc8/mac-air-m1.jpg",
+          "category": "Computers",
+          "price": 1200,
+          "description": "Apple's lightweight laptop powered by the M1 chip.",
+          "specification": ["13.3 inch Retina display", "8GB RAM", "256GB SSD", "Apple M1 chip"],
+          "availability": true,
+          "rating": 4.9,
+          "other": "All-day battery life"
+        },
+        {
+          "product_id": "201",
+          "product_title": "iPhone 13",
+          "product_image": "https://i.ibb.co.com/mSC3Jsf/iphone-13.jpg",
+          "category": "Phones",
+          "price": 799,
+          "description": "Apple's latest iPhone with improved performance and cameras.",
+          "specification": ["6.1 inch display", "128GB storage", "A15 Bionic chip", "Dual 12MP cameras"],
+          "availability": true,
+          "rating": 4.7,
+          "other": "Available in multiple colors"
+        },
+        {
+          "product_id": "202",
+          "product_title": "Samsung Galaxy S21",
+          "product_image": "https://i.ibb.co.com/yfngN6K/galaxy-s21.jpg",
+          "category": "Phones",
+          "price": 850,
+          "description": "A flagship phone with powerful specs and a beautiful display.",
+          "specification": ["6.2 inch display", "128GB storage", "Exynos 2100", "Triple 12MP cameras"],
+          "availability": false,
+          "rating": 4.6,
+          "other": "5G enabled"
+        },
+        {
+          "product_id": "301",
+          "product_title": "Apple Watch Series 7",
+          "product_image": "https://i.ibb.co.com/kgFb3f8/iphone-watch.jpg",
+          "category": "Smart Watches",
+          "price": 399,
+          "description": "Apple's latest smartwatch with new health features.",
+          "specification": ["44mm display", "GPS + Cellular", "ECG app", "Blood Oxygen sensor"],
+          "availability": true,
+          "rating": 4.8,
+          "other": "Water resistant"
+        },
+        {
+          "product_id": "302",
+          "product_title": "Samsung Galaxy Watch 4",
+          "product_image": "https://i.ibb.co.com/dWsGQw4/galaxy-watch-4.jpg",
+          "category": "Smart Watches",
+          "price": 329,
+          "description": "A smartwatch powered by Wear OS with advanced health tracking.",
+          "specification": ["40mm display", "GPS", "Heart rate monitoring", "Sleep tracking"],
+          "availability": true,
+          "rating": 4.5,
+          "other": "Wear OS by Google"
+        },
+        {
+          "product_id": "401",
+          "product_title": "Anker PowerCore 10000",
+          "product_image": "https://i.ibb.co.com/HB4JCts/anker-power-bank.jpg",
+          "category": "Power Banks",
+          "price": 50,
+          "description": "A compact, high-capacity power bank for charging on the go.",
+          "specification": ["10000mAh capacity", "USB-A output", "Fast charging support"],
+          "availability": true,
+          "rating": 4.4,
+          "other": "Lightweight and travel-friendly"
+        },
+        {
+          "product_id": "402",
+          "product_title": "RAVPower 20000mAh",
+          "product_image": "https://i.ibb.co.com/nRD5wKW/Rav-Power-bank.jpg",
+          "category": "Power Banks",
+          "price": 60,
+          "description": "High-capacity power bank with multiple charging ports.",
+          "specification": ["20000mAh capacity", "USB-C and USB-A output", "Quick charge support"],
+          "availability": false,
+          "rating": 4.6,
+          "other": "Includes USB-C cable"
+        },
+        {
+          "product_id": "501",
+          "product_title": "Apple 20W USB-C Charger",
+          "product_image": "https://i.ibb.co.com/SyhYF3q/apple-usb-charger.jpg",
+          "category": "Chargers",
+          "price": 30,
+          "description": "Compact USB-C charger for fast charging Apple devices.",
+          "specification": ["20W output", "USB-C", "Fast charging compatible"],
+          "availability": true,
+          "rating": 4.8,
+          "other": "Compatible with iPhone and iPad"
+        },
+        {
+          "product_id": "502",
+          "product_title": "Samsung 25W Super Fast Charger",
+          "product_image": "https://i.ibb.co.com/nRD5wKW/Rav-Power-bank.jpg",
+          "category": "Chargers",
+          "price": 35,
+          "description": "Fast charger for Samsung Galaxy devices.",
+          "specification": ["25W output", "USB-C", "Super Fast Charging"],
+          "availability": true,
+          "rating": 4.7,
+          "other": "Compatible with Galaxy devices"
+        }
+      ]
+      

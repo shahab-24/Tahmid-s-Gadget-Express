@@ -2,12 +2,12 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
-     <div className="navbar bg-base-100">
+    <div className="">
+     <div className="navbar pt-6">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-        <svg
+      <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
           fill="none"
@@ -30,9 +30,10 @@ const Navbar = () => {
         
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    
+    <a className="btn btn-ghost text-xl text-white">Ts Gadget Express</a>
   </div>
-  <div className="navbar-center hidden lg:flex">
+  <div className="navbar-center hidden lg:flex ">
     <ul className="menu menu-horizontal px-1 flex gap-4">
     <li><NavLink>Home</NavLink></li>
         <li><NavLink>Statistics</NavLink></li>
@@ -41,11 +42,11 @@ const Navbar = () => {
   </div>
   <div className="navbar-end">
     <button className="btn btn-ghost btn-circle">
-     <img  className="w-[30px]" src="https://img.icons8.com/?size=24&id=85080&format=png" alt="" />
+     <img  className="w-[30px] bg-white opacity-85 rounded-full p-2" src="https://img.icons8.com/?size=24&id=85080&format=png" alt="" />
     </button>
     <button className="btn btn-ghost btn-circle">
       <div className="indicator">
-        <img className="w-[30px]" src="https://img.icons8.com/?size=50&id=581&format=png" alt="" />
+        <img className="w-[30px] bg-white rounded-full p-2  opacity-85" src="https://img.icons8.com/?size=50&id=581&format=png" alt="" />
         <span className="badge badge-xs badge-primary indicator-item"></span>
       </div>
     </button>

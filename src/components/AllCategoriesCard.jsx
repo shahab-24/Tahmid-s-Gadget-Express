@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import CategoryCard from "./CategoryCard";
 
 const AllCategoriesCard = ({ categories }) => {
-  console.log(categories);
+  // console.log(categories);
 
   const [card, setCard] = useState([]);
-  console.log(card);
+  // console.log(card);
 
   useEffect(() => {
     fetch("/public/gadgets.json")
@@ -22,8 +22,8 @@ const AllCategoriesCard = ({ categories }) => {
       </div>
       <div className="grid lg:grid-cols-4 gap-4">
 
-        <div className="text-white font-bold col-span-1 border-2 border-purple-600 h-auto bg-base-100">
-          <h4 className="text-center text-3xl p-4">All Categories</h4>
+        <div className="text-white font-bold col-span-1 border-2 border-purple-600 h-auto  self-start  p-6 shadow-xl rounded-xl bg-base-100">
+          <h4 className="text-center text-3xl p-4 bg-purple-600 rounded-full">All Categories</h4>
           <divider className="divider text-purple-600"></divider>
           {categories.map((category) => (
             <div key={category.id} className="">

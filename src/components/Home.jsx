@@ -1,6 +1,7 @@
 import { Outlet, useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
 import AllCategoriesCard from "./AllCategoriesCard";
+import Footer from "./Footer";
 
 const Home = () => {
         const categories = useLoaderData();
@@ -27,6 +28,9 @@ const Home = () => {
                         <div className="mt-[550px] absolute container mx-auto ">
                         
                         <AllCategoriesCard categories={categories.categories}></AllCategoriesCard>
+                        </div>
+                        <div className="mt-[1250px]">
+                        <Footer></Footer>
                         </div>
                 </div>
         );

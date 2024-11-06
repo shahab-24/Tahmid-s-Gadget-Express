@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const CategoryCard = ({ cards }) => {
-  const { product_image, product_title, price } = cards;
+  const { product_image, product_title, price, product_id } = cards;
 
   return (
     <div className="h-full">
@@ -17,8 +18,8 @@ const CategoryCard = ({ cards }) => {
             </div>
           
 
-          <div className="card-actions justify-end ">
-            <button className="btn btn-primary w-full">View Details</button>
+          <div className="card-actions justify-start ">
+            <Link to={`/ProductDetails/${product_id}`}><button className="btn btn-primary rounded-full">View Details</button></Link>
           </div>
         </div>
       </div>

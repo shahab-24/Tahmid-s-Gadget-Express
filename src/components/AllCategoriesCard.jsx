@@ -20,16 +20,16 @@ const AllCategoriesCard = ({ categories }) => {
           Exploring Cutting-Edge Gadgets
         </h3>
       </div>
-      <div className="grid lg:grid-cols-4 gap-4">
+      <div className="grid lg:grid-cols-4 gap-4 shadow-xl">
 
         <div className="text-white font-bold col-span-1 border-2 border-purple-600 h-auto  self-start  p-6 shadow-xl rounded-xl bg-base-100">
-          <h4 className="text-center text-3xl p-4 bg-purple-600 rounded-full">All Categories</h4>
+          <h4 className="text-center text-2xl p-4 bg-purple-600 rounded-full">All Categories</h4>
           <divider className="divider text-purple-600"></divider>
           {categories.map((category) => (
             <div key={category.id} className="">
               <ul className="flex space-y-4 gap-4 justify-center">
                 <li>
-                  <button className="btn btn-primary mt-4 w-[150px]">
+                  <button className="btn btn-outline text-purple-600 mt-4 w-[150px]">
                     {category.name}
                   </button>
                 </li>

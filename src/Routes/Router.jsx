@@ -3,16 +3,19 @@ import MainLayout from "../components/MainLayout";
 import Home from "../components/Home";
 import AllCategoriesCard from "../components/AllCategoriesCard";
 import ProductDetails from "../Pages/ProductDetails";
+import ErrorPage from "../components/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+
     children: [
       {
         path: "/",
         element: <Home></Home>,
         loader: () =>fetch ('/public/categories.json'),
+      
         children: [
           {
             path: '/',
@@ -24,7 +27,12 @@ const router = createBrowserRouter([
         path: '/ProductDetails/:id',
         element: <ProductDetails></ProductDetails>,
         loader: () => fetch('/public/gadgets.json')
-      }
+      },
+      {
+        path: '/',
+        element: <ErrorPage></ErrorPage>
+
+      },
   
     ],
   

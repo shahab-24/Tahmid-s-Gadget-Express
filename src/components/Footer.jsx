@@ -6,7 +6,7 @@ const Footer = () => {
                         
     
     <p className="font-bold">
-    <span className="text-sky-400 font-bold text-5xl">Ts </span>  Gadget   <span className="text-sky-400 text-4xl">x</span>press
+    <span className="text-sky-400 font-bold text-4xl">Ts </span>  Gadget   <span className="text-sky-400 text-3xl">x</span>press
       <br />
     
     </p>
@@ -16,7 +16,7 @@ const Footer = () => {
     
   
                         </div>
-                        <footer className="footer grid-rows-2 p-10 flex justify-around mt-10">
+                        <footer className="footer grid-rows-2 p-6 flex justify-around mt-6">
                         
  
 

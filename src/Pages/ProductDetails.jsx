@@ -1,27 +1,45 @@
-import { useEffect, useState } from "react";
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import {  useLoaderData, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
+import { CartContext } from "../CartProvider";
 
 const ProductDetails = () => {
   const data = useLoaderData();
   // console.log(data.product_title)
   const { id } = useParams();
   const [product, setProduct] = useState({ });
+  const {cart, setCart, wishlist, setWishlist} = useContext(CartContext)
  
   useEffect(() => {
     const p = data.find((item) => item.product_id=== id);
     setProduct(p);
   }, [data, id]);
 
-  console.log(data);
-  console.log(product);
-  console.log(id);
-
+  
   const ratingChanged = (newRating) => {
     console.log(newRating);
   };
+
+  const handleAddToCart = (product) => {
+    if(!cart.some(item => item.product_id === product.product_id)){
+      setCart([...cart, product])
+    }
+    else{
+      alert("already exists")
+    
+    }
+    
+  }
+
+  const handleAddToWishlist = (product) => {
+    if(!wishlist.some(item => item.product_id === product.product_id)){
+      setWishlist([...wishlist, product])
+    }
+    else{
+      alert("already added to wishlist")
+    }
+  }
    
-  
 
   const {product_image, product_title, price, category, rating, specification, other} = product;
 
@@ -56,8 +74,7 @@ const ProductDetails = () => {
                 {Array.isArray(specification) && specification.map((item, idx) => (
       <li key={idx}>{item}</li>
     ))}
-                {/* {
-              specification.map((item, idx)=>(<li key={idx}>{item}</li>))} */}
+              
                 
                 </ul>
 
@@ -78,8 +95,12 @@ const ProductDetails = () => {
             </div>
 
             <div className="card-actions justify-start flex items-center">
-            <Link to={`/ProductDetails/${product.product_id}`}><button className="btn bg-purple-600 rounded-full text-white font-semibold text-xl px-4">Add to Cart <img src="https://img.icons8.com/?size=24&id=85080&format=png" alt="" /></button></Link>
-            <button className="btn bg-white opacity-55 rounded-full"><img src="https://img.icons8.com/?size=24&id=85038&format=png" alt="" /></button>
+            <button onClick={()=> handleAddToCart(product)} className="btn bg-purple-600 rounded-full text-white font-semibold text-xl px-4">
+              Add to Cart
+               <img src="https://img.icons8.com/?size=24&id=85080&format=png" alt="" />
+            </button>
+
+            <button onClick={()=> handleAddToWishlist(product)} className="btn bg-white opacity-55 rounded-full"><img src="https://img.icons8.com/?size=24&id=85038&format=png" alt="" /></button>
           </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import Home from "../components/Home";
 import AllCategoriesCard from "../components/AllCategoriesCard";
 import ProductDetails from "../Pages/ProductDetails";
 import ErrorPage from "../components/ErrorPage";
+import Dashboard from "../components/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -30,9 +31,13 @@ const router = createBrowserRouter([
       },
       {
         path: '/',
-        element: <ErrorPage></ErrorPage>
+        errorElement: <ErrorPage></ErrorPage>
 
       },
+      {
+        path: "/dashboard",
+      element: <Dashboard></Dashboard>
+      }
   
     ],
   

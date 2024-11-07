@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { CartContext } from "../CartProvider";
 
 const Navbar = () => {
+  const {cart, wishlist} = useContext(CartContext)
   return (
     <div className="">
      <div className="navbar pt-6">
@@ -23,9 +26,9 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
-        <li><NavLink>Home</NavLink></li>
-        <li><NavLink>Statistics</NavLink></li>
-        <li><NavLink>Dashboard</NavLink></li>
+          <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/statistics">Statistics</NavLink></li>
+        <li><NavLink to="/dashboard">Dashboard</NavLink></li>
         
         
       </ul>
@@ -35,19 +38,25 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex ">
     <ul className="menu menu-horizontal px-1 flex gap-4">
-    <li><NavLink>Home</NavLink></li>
-        <li><NavLink>Statistics</NavLink></li>
-        <li><NavLink>Dashboard</NavLink></li>
+    <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/statistics">Statistics</NavLink></li>
+        <li><NavLink to="/dashboard">Dashboard</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end">
     <button className="btn btn-ghost btn-circle">
-     <img  className="w-[30px] bg-white opacity-85 rounded-full p-2" src="https://img.icons8.com/?size=24&id=85080&format=png" alt="" />
+  <div className="indicator">
+  
+  <img  className="w-[30px] bg-white opacity-85 rounded-full p-2" src="https://img.icons8.com/?size=24&id=85080&format=png" alt="" />
+
+  <span className="badge badge-md badge-primary indicator-item">{cart.length}</span>
+  </div>
+     
     </button>
     <button className="btn btn-ghost btn-circle">
       <div className="indicator">
         <img className="w-[30px] bg-white rounded-full p-2  opacity-85" src="https://img.icons8.com/?size=50&id=581&format=png" alt="" />
-        <span className="badge badge-xs badge-primary indicator-item"></span>
+        <span className="badge badge-md badge-secondary indicator-item">{wishlist.length}</span>
       </div>
     </button>
   </div>

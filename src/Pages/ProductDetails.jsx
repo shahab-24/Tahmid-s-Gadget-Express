@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import {  useLoaderData, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
 import { CartContext } from "../CartProvider";
+import { addToCart } from "../localStorage";
 
 const ProductDetails = () => {
   const data = useLoaderData();
@@ -20,7 +21,7 @@ const ProductDetails = () => {
     console.log(newRating);
   };
 
-  const handleAddToCart = (product) => {
+  const handleAddToCart = (product, ) => {
     if(!cart.some(item => item.product_id === product.product_id)){
       setCart([...cart, product])
     }
@@ -28,7 +29,7 @@ const ProductDetails = () => {
       alert("already exists")
     
     }
-    
+  
   }
 
   const handleAddToWishlist = (product) => {

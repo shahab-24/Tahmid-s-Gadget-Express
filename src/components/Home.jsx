@@ -1,4 +1,4 @@
-import { Outlet, useLoaderData } from "react-router-dom";
+import { Link, Outlet, useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
 import AllCategoriesCard from "./AllCategoriesCard";
 import Footer from "./Footer";
@@ -17,7 +17,9 @@ const Home = () => {
                         <p>
                         Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
                         </p>
+                        <Link to="/dashboard">
                         <button className="btn btn-primary bg-white rounded-full px-6">Shop Now</button>
+                        </Link>
                         </div>
                         <div className="">
                         <Banner></Banner>
@@ -30,7 +32,7 @@ const Home = () => {
                         <AllCategoriesCard categories={categories.categories}></AllCategoriesCard>
                         </div>
                         <div className="mt-16 w-[100%]">
-                        <Footer></Footer>
+                        
                         </div>
                 </div>
         );

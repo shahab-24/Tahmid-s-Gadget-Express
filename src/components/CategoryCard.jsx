@@ -17,8 +17,8 @@ const CategoryCard = ({ cards }) => {
             </div>
           
 
-          <div className="card-actions justify-start ">
-            <Link to={`/ProductDetails/${product_id}`}><button className="btn btn-outline  text-xl rounded-full text-purple-600">View Details</button></Link>
+          <div className="card-actions justify-center">
+            <Link to={`/ProductDetails/${product_id}`}><button className="btn btn-outline  text-base lg:text-lg md:text-lg rounded-full text-purple-600">View Details</button></Link>
           </div>
         </div>
       </div>

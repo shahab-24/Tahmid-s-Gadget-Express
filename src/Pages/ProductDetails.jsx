@@ -3,6 +3,7 @@ import {  useLoaderData, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
 import { CartContext } from "../CartProvider";
 import { addToCart } from "../localStorage";
+import { toast } from "react-toastify";
 
 const ProductDetails = () => {
   const data = useLoaderData();
@@ -24,6 +25,9 @@ const ProductDetails = () => {
   const handleAddToCart = (product, ) => {
     if(!cart.some(item => item.product_id === product.product_id)){
       setCart([...cart, product])
+      toast.success(`${product.product_title} has been added to your cart! 🛒`, {
+        icon: "🛒",
+      });
     }
     else{
       alert("already exists")
@@ -35,6 +39,9 @@ const ProductDetails = () => {
   const handleAddToWishlist = (product) => {
     if(!wishlist.some(item => item.product_id === product.product_id)){
       setWishlist([...wishlist, product])
+      toast.info(`${product.product_title} has been added to your wishlist! 💖`, {
+        icon: "💖",
+      });
     }
     else{
       alert("already added to wishlist")

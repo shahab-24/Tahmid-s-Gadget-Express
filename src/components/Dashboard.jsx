@@ -41,6 +41,9 @@ const Dashboard = () => {
               }
 
 
+
+
+
               const calculateTotalPrice = () => {
                 return cart.reduce((total,item) => total + (item.price || 0) , 0)
               }
@@ -49,20 +52,25 @@ const Dashboard = () => {
               }
 
               const handleSortByPrice = () => {
-                setSortedAscending(prev => !prev); // Toggle sort order
+                setSortedAscending(prev => !prev); 
             };
 
               const sortedItemsByPrice = (items) => {
                 console.log("hello form sort", items)
                 console.log(items.price);
-                return [...items].sort((a, b) => {
+                return[...items, items].sort((a, b) => {
                         console.log('Item A:', a.price, 'Item B:', b.price);
-                        isSortedAscending  ? ( b.price - a.price) : (a.price - b.price);
+                        isSortedAscending  ?  b.price - a.price : a.price - b.price;
+
+                        
                         
                 })
                 
-                
               }
+
+
+              const displayedItems = activeTab === "cart" ? sortedItemsByPrice(cart) : sortedItemsByPrice(wishlist);
+
 
               
   return (
@@ -95,18 +103,26 @@ const Dashboard = () => {
         activeTab === "cart" ? "Cart" : "Wishlist"}</h2>
         </div>
         <div className="flex gap-10">
-        <h3 className="text-3xl font-semibold text-black">Total Cost: <span> ${activeTab === "cart" &&  `${calculateTotalPrice()}` || (activeTab === "wishlist" && `${calculateTotalPriceWishlist()}`)}</span></h3>
+        <h3 className="text-3xl font-semibold text-black">Total Cost: <span>
+           ${activeTab === "cart" &&  `${calculateTotalPrice()}` || (activeTab === "wishlist" && `${calculateTotalPriceWishlist()}`)}
+          </span></h3>
         <button onClick={handleSortByPrice} className="btn btn-outline bg-white opacity-55 rounded-full text-purple-700 text-xl font-semibold">Sort By Price  <img className="w-[10%]" src="https://img.icons8.com/?size=50&id=21890&format=png" alt="" /></button>
         <button className="btn btn-outline  text-white text-xl font-semibold">Purchase</button>
         </div>
         </div>
-      <div className="mt-4 flex flex-wrap justify-center gap-6">
+
+        <div className="mt-4 flex flex-wrap justify-center gap-6">
+        {displayedItems.length > 0
+          ? displayedItems.map(item => renderItemCard(item, activeTab === "cart" ? removeFromCart : removeFromWishlist))
+          : <p className="text-xl text-center">No items in {activeTab}</p>}
+      </div>
+      {/* <div className="mt-4 flex flex-wrap justify-center gap-6">
         {activeTab === "cart" && (cart.length > 0 ? sortedItemsByPrice(cart).map(item =>renderItemCard(item, removeFromCart)) : "")}
 
         {
                 activeTab === "wishlist" && (wishlist.length > 0 ? sortedItemsByPrice(wishlist).map(item => renderItemCard(item, removeFromWishlist)) : "")
         }
-      </div>
+      </div> */}
 
     
     </div>

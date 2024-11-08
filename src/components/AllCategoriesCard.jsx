@@ -61,7 +61,7 @@ const AllCategoriesCard = ({ categories }) => {
           ))}
         </div>
 
-        <div className="col-span-3 grid lg:grid-cols-3 gap-4">
+        <div className="col-span-3 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
          
             {allCards.map((card) => (
               <CategoryCard key={card.id} cards={card}></CategoryCard>

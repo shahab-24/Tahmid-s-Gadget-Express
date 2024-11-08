@@ -1,34 +1,34 @@
 # Ts Gadget Express
 
-## Welcome to Ts Gadget Express, a web application designed to explore and manage a variety of gadgets with ease. This project allows users to view products, add items to a cart or wishlist, and keep track of selected items through a personalized dashboard.
+ Welcome to Ts Gadget Express, a web application designed to explore and manage a variety of gadgets with ease. This project allows users to view products, add items to a cart or wishlist, and keep track of selected items through a personalized dashboard.
 
-### Live Demo:
+# Live Demo:
 Live Website Link: https://merry-bombolone-b8e16a.netlify.app
 
 
 # Project Documentation:
 
-# https://docs.google.com/document/d/160lxS8Ikcat7A4VoN0jinzwrd4z2hxvHX4U_fwHC16I/edit?usp=drivesdk 
+ https://docs.google.com/document/d/160lxS8Ikcat7A4VoN0jinzwrd4z2hxvHX4U_fwHC16I/edit?usp=drivesdk 
 
 
 # Key Features:
-## 1.Add to Cart & Wishlist: Users can add gadgets to a cart or wishlist. The items are saved in local storage, and a count badge is shown for both.
-## 2.Dashboard with Tabs: A user-friendly dashboard that separates Cart and Wishlist items into tabs, allowing users to switch between them.
-## 3.Dynamic Rendering of Items: The dashboard dynamically displays each item as a card under the selected tab, with options to remove items.
-## 4.Data Persistence with Local Storage: Data is saved in the browser's local storage, ensuring cart and wishlist contents persist even after page refresh or browser restart.
-## 5.Rating Display: Each product card displays a rating component with a user-friendly star display.
+ 1.Add to Cart & Wishlist: Users can add gadgets to a cart or wishlist. The items are saved in local storage, and a count badge is shown for both.
+ 2.Dashboard with Tabs: A user-friendly dashboard that separates Cart and Wishlist items into tabs, allowing users to switch between them.
+ 3.Dynamic Rendering of Items: The dashboard dynamically displays each item as a card under the selected tab, with options to remove items.
+ 4.Data Persistence with Local Storage: Data is saved in the browser's local storage, ensuring cart and wishlist contents persist even after page refresh or browser restart.
+ 5.Rating Display: Each product card displays a rating component with a user-friendly star display.
 
 
 # Technologies Used:
-## React.js: The project is built with React, using components to create a modular and maintainable structure.
-## Tailwind CSS: Tailwind was used for fast, utility-first styling.
-## React Router: React Router enables seamless navigation and routing within the app.
-## DaisyUI
-## React-toastify
-## Icons8 for Icon
-## React star component
-## React Recharts for showing statistics
-## React Helmet for dynamic title
+React.js: The project is built with React, using components to create a modular and maintainable structure.
+ Tailwind CSS: Tailwind was used for fast, utility-first styling.
+React Router: React Router enables seamless navigation and routing within the app.
+ DaisyUI
+React-toastify
+ Icons8 for Icon
+React star component
+React Recharts for showing statistics
+React Helmet for dynamic title
 
 
 # Concepts Used in This Project:

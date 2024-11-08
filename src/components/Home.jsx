@@ -1,13 +1,18 @@
-import { Link, Outlet, useLoaderData } from "react-router-dom";
+import { Link,  useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
 import AllCategoriesCard from "./AllCategoriesCard";
-import Footer from "./Footer";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
         const categories = useLoaderData();
         
         return (
                 <div className="mx-auto">
+                        <div>
+                                <Helmet>
+                                        <title>Home || Ts Gadgets Express</title>
+                                </Helmet>
+                        </div>
                         
                         <div className="flex justify-center my-12 flex-col items-center space-y-10">
                         <h1 className="text-7xl font-bold text-white gap-6">
@@ -22,7 +27,7 @@ const Home = () => {
                         </Link>
                         </div>
                         <div className="">
-                        <Banner></Banner>
+                                <Banner></Banner>
                         
                         
                         

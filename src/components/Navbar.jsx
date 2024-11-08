@@ -29,6 +29,7 @@ const Navbar = () => {
           <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/statistics">Statistics</NavLink></li>
         <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+        <li><NavLink to="/profile">Profile</NavLink></li>
         
         
       </ul>
@@ -41,6 +42,7 @@ const Navbar = () => {
     <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/statistics">Statistics</NavLink></li>
         <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+        <li><NavLink to="/profile">Profile</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end">
@@ -61,6 +63,7 @@ const Navbar = () => {
     </button>
   </div>
 </div>
+
     </div>
   );
 };

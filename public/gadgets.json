@@ -118,6 +118,30 @@
           "availability": true,
           "rating": 4.7,
           "other": "Compatible with Galaxy devices"
+        },
+        {
+          "product_id": "601",
+          "product_title": "Sony WH-1000XM4",
+          "product_image": "https://i.ibb.co.com/vdjQZKk/head.jpg",
+          "category": "Accessories",
+          "price": 349,
+          "description": "Noise-canceling headphones with superior sound quality.",
+          "specification": ["Over-ear", "Wireless", "Active Noise Cancelling", "30 hours battery life"],
+          "availability": true,
+          "rating": 4.9,
+          "other": "Comfortable fit with adaptive sound control"
+        },
+        {
+          "product_id": "602",
+          "product_title": "Logitech MX Master 3",
+          "product_image": "https://i.ibb.co.com/kJ89PFb/mouse.jpg",
+          "category": "Accessories",
+          "price": 99,
+          "description": "Advanced wireless mouse with precision and customizable buttons.",
+          "specification": ["Wireless", "4000 DPI sensor", "Customizable buttons", "USB-C charging"],
+          "availability": true,
+          "rating": 4.8,
+          "other": "Ideal for professional use"
         }
       ]
       

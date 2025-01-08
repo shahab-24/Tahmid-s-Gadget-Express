@@ -6,9 +6,7 @@
 Live Website Link: https://merry-bombolone-b8e16a.netlify.app
 
 
-# Project Documentation:
 
- https://docs.google.com/document/d/160lxS8Ikcat7A4VoN0jinzwrd4z2hxvHX4U_fwHC16I/edit?usp=drivesdk 
 
 
 # Key Features:
